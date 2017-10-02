@@ -173,7 +173,7 @@ public interface Device extends DBusInterface {
    * Write data on the device
    */
   @org.freedesktop.DBus.Description("Write data on the device")
-  public void Write() throws DBusException;
+  public void Write(String sensorName, String sensorValue) throws DBusException;
 
   /**
    * Enable subscription

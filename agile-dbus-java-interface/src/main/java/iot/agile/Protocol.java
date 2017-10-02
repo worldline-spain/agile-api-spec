@@ -134,11 +134,15 @@ public interface Protocol extends DBusInterface {
 	 */
 	public void Write(String deviceAddress, Map<String, String> profile, byte[] payload) throws DBusException;
 
+	public void Write(String deviceAddress, String payload) throws DBusException;
+
 	/**
 	 * Read data over the Protocol, may be cached in the Data property depending
 	 * on implementation to save resources
 	 */
 	public byte[] Read(String deviceAddress, Map<String, String> profile) throws DBusException;
+
+	public byte[] Read(String deviceAddress, String sensorName) throws DBusException;
 
 	/**
 	 * Notification based read using dbus signaling

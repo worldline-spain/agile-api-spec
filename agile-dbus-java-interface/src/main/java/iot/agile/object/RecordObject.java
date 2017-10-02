@@ -30,8 +30,7 @@ public final class RecordObject extends Struct {
 	@Position(5)
 	public final long lastUpdate;
 
-	public RecordObject(String deviceID, String componentID, String value, String unit, String format,
-			long lastUpdate) {
+	public RecordObject(String deviceID, String componentID, String value, String unit, String format, long lastUpdate) {
 		this.deviceID = deviceID;
 		this.componentID = componentID;
 		this.value = value;
